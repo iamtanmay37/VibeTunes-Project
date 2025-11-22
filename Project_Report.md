@@ -1,105 +1,44 @@
-VibeTunes: Emotion-Based Music Recommendation System
+# Project Report: VibeTunes (Desi Edition)
 
-Name: Tanmay
+**Name:** Tanmay
+**Project:** Emotion-Based Music Recommendation System
+**Date:** November 2025
 
-Date: November 2025
+---
 
-1. Abstract
+## 1. Introduction
+Music is something everyone enjoys, but sometimes it is difficult to decide what to listen to based on how we are feeling. Most apps just show popular songs, but they don't always match our mood. My project, "VibeTunes," is a web application that solves this problem. It asks the user how they are feeling and suggests a playlist that matches their vibe. I made a special "Desi Edition" that includes Indian artists like Seedhe Maut, Arijit Singh, and old Bollywood classics.
 
-Music plays a vital role in human emotional regulation. However, with the overwhelming amount of music available on streaming platforms, users often suffer from decision fatigue. VibeTunes is a web-based application designed to solve this by recommending music based on the user's text input. Utilizing Natural Language Processing (NLP) techniques and a Python-based recommendation engine, the system interprets user sentiment and retrieves relevant musical tracks, providing a personalized listening experience.
+## 2. Problem Statement
+Current music players require us to manually search for songs or skip through random playlists to find the right track. This takes time and can be annoying. There is a need for a simple system that understands basic emotions (like "Happy" or "Sad") and gives immediate song suggestions without searching.
 
-2. Introduction
+## 3. How it Works (Methodology)
+I built this project using Python because it is good for handling logic and data.
 
-2.1 Problem Statement
+**The process is simple:**
+1.  **Input:** The user can either select a mood from a dropdown menu (like Happy, Sad, Angry) or type a sentence (e.g., "I am feeling very low").
+2.  **Processing:** If the user types a sentence, the code looks for specific keywords. For example, if it finds words like "gym," "power," or "run," it knows the mood is "Energetic."
+3.  **Output:** The app searches through a list of songs I created. Each song is tagged with a mood. The app picks songs that match the detected mood and shows them with a YouTube link.
 
-Traditional music players require users to manually search for songs or browse generic genres. They lack the ability to understand the context of the user's mood (e.g., the difference between "sad" and "heartbroken" or "gym" and "running").
+## 4. Implementation Details
+I used the following tools to build the project:
+* **Python:** For the main coding logic.
+* **Streamlit:** This is a library that allowed me to create the website interface easily without writing complex HTML or CSS.
+* **GitHub:** To store my code and manage versions.
+* **Streamlit Cloud:** To host the website so anyone can use it.
 
-2.2 Objective
+**Key Features:**
+* **Hybrid Input:** You can type your feelings or just pick from a list.
+* **Desi Database:** I manually curated a list of songs that Indian students actually listen to, including Desi Hip Hop and Bollywood.
 
-The primary objective of this project is to develop a system that:
+## 5. Results and Conclusion
+The application works successfully. It correctly identifies the user's mood and displays the right songs. For example, selecting "Angry" shows aggressive rap songs, while "Relaxed" shows slow indie music.
 
-Accepts natural language text input from the user.
+This project helped me understand how to build a web app using Python and how to deploy it on the internet. It is a simple but useful tool for music lovers.
 
-Analyzes the input to determine the dominant emotion.
+## 6. Future Scope
+In the future, I plan to connect this to the Spotify API so the songs play directly in the app instead of opening YouTube. I also want to add support for Hindi typing.
 
-Maps the emotion to a specific subset of songs.
-
-Displays a playable playlist interface.
-
-3. System Architecture and Methodology
-
-3.1 Flowchart
-
-User Input: User types a sentence (e.g., "I want to relax after a long day").
-
-Preprocessing: Text is converted to lowercase and tokenized.
-
-Keyword Matching: The system scans for high-weight keywords associated with predefined mood categories.
-
-Scoring Algorithm: A frequency counter determines the dominant mood (Happy, Sad, Energetic, Relaxed, Romantic).
-
-Data Retrieval: The system queries the internal JSON-structure database for songs tagged with the detected mood.
-
-Output: The UI renders song cards with title, artist, and playback links.
-
-3.2 Technology Stack
-
-Python: Selected for its robust string processing capabilities and ease of prototyping.
-
-Streamlit: Used for the frontend to create a rapid, data-driven web interface without the overhead of HTML/CSS.
-
-GitHub: Used for version control and CI/CD (Continuous Deployment) integration.
-
-Streamlit Cloud: Used for hosting the live application.
-
-4. Implementation Details
-
-4.1 The Recommendation Engine
-
-The core logic relies on a dictionary-based mapping system. Emotions are categorized into five distinct classes. Each class contains a bag-of-words model (synonyms and related terms).
-
-Example Logic:
-
-Input: "I am going to the gym."
-
-Keywords Detected: "gym"
-
-Mapped Category: "Energetic"
-
-Result: Returns songs like "Eye of the Tiger".
-
-4.2 Database Structure
-
-The data is stored in a structured list of dictionaries, simulating a NoSQL database approach. Each entry contains:
-
-Title
-
-Artist
-
-Mood Tag
-
-Streaming Link
-
-5. Results and Analysis
-
-The system successfully identifies simple and compound sentences regarding emotional states.
-
-Accuracy: The keyword-based approach provides high accuracy for explicit emotional expressions.
-
-Performance: The application loads in under 2 seconds and processes input in <500ms.
-
-Limitations: Sarcasm or extremely complex metaphors may not be detected by the current rule-based engine.
-
-6. Conclusion and Future Scope
-
-VibeTunes successfully demonstrates the intersection of basic NLP and Web Development. It provides a functional, user-friendly solution for mood-based music discovery.
-
-Future Scope includes:
-
-Spotify API Integration: To fetch real-time data instead of a static list.
-
-Machine Learning: Implementing a trained classifier (e.g., Naive Bayes) for better sentiment accuracy.
-
-User History: Saving user preferences to refine recommendations over time.
-
-Github Repository: https://www.google.com/url?sa=E&source=gmail&q=https://github.com/iamtanmay37/VibeTunes-Project
+---
+**Live App Link:** https://vibetunes-project-qv9fbcndkevrrkyrisenmt.streamlit.app/
+**GitHub Repository:** https://github.com/iamtanmay37/VibeTunes-Project
