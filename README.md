@@ -1,6 +1,7 @@
-🎵 VibeTunes: Emotion-Based Music Recommender
+# 🎵 VibeTunes: Emotion-Based Music Recommender
 
-Live Demo: Click here to launch App
+**🔴 LIVE PROJECT LINK:     [Click here to launch App](https://vibetunes-project-qv9fbcndkevrrkyrisenmt.streamlit.app/)
+
 
 📌 Overview
 
