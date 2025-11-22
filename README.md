@@ -1,4 +1,4 @@
-# VibeTunes: Desi Edition 🎵
+# VibeTunes:🎵
 
 **Live App:** [Click here to use the App](https://vibetunes-project-qv9fbcndkevrrkyrisenmt.streamlit.app/)
 
