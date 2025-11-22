@@ -1,6 +1,5 @@
-# Project Report: VibeTunes (Desi Edition)
+# Project Report: VibeTunes 
 
-Reg id : 25BAS10093
 **Name:** Tanmay Tiwari
 
 
