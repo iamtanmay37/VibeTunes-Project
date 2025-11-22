@@ -90,7 +90,7 @@ def main():
     st.markdown("### The smartest way to find music.")
     st.markdown("---")
 
-    st.subheader("Step 1: What do you want to listen to?")
+    st.subheader("1: What do you want to listen to?")
     genre_filter = st.radio(
         "Select Language / Style:",
         ["Hindi (Bollywood)", "Punjabi / DHH", "English (Pop/Rock)", "Indie (Chill)", "All Languages"],
@@ -108,7 +108,7 @@ def main():
 
     st.markdown("---")
 
-    st.subheader("Step 2: How are you feeling?")
+    st.subheader("2: How are you feeling?")
     
     col1, col2 = st.columns(2)
     with col1:
@@ -158,3 +158,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
