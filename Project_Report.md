@@ -1,8 +1,10 @@
 # Project Report: VibeTunes (Desi Edition)
 
-**Name:** Tanmay
+Reg id : 25BAS10093
+**Name:** Tanmay Tiwari
+
+
 **Project:** Emotion-Based Music Recommendation System
-**Date:** November 2025
 
 ---
 
