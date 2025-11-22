@@ -92,4 +92,9 @@ def main():
                         st.markdown(f"**{song['title']}** - {song['artist']}")
                         st.markdown(f"[▶ Listen on YouTube]({song['link']})")
             else:
-                st.warning("No songs found
+                st.warning("No songs found for this specific mood yet!")
+        else:
+            st.error("Please select a mood or type a sentence with emotion keywords!")
+
+if __name__ == "__main__":
+    main()
