@@ -1,62 +1,29 @@
-# 🎵 VibeTunes: Emotion-Based Music Recommender
+# VibeTunes: Desi Edition 🎵
 
-**🔴 LIVE PROJECT LINK:     [Click here to launch App](https://vibetunes-project-qv9fbcndkevrrkyrisenmt.streamlit.app/)
+**Live App:** [Click here to use the App](https://vibetunes-project-qv9fbcndkevrrkyrisenmt.streamlit.app/)
 
+## About the Project
+VibeTunes is a Python web app I built for my college project. It is a music recommender that helps you find songs based on your mood. I focused on Indian music (Bollywood, DHH, and Indie) because standard apps often ignore these genres in their "mood" playlists.
 
-📌 Overview
+## Features
+* **Two ways to use it:** Select a mood from the menu OR type how you are feeling in the text box.
+* **Moods Detected:** Happy, Sad, Energetic (Gym), Relaxed, Romantic, and Angry.
+* **Song Library:** Includes artists like KR$NA, Arijit Singh, Seedhe Maut, and Prateek Kuhad.
+* **Instant Play:** Provides direct links to listen on YouTube.
 
-VibeTunes is an intelligent web application that suggests music playlists based on the user's current emotional state. By analyzing text input (e.g., "I am feeling stressed about exams"), the system detects the underlying mood and provides a curated list of songs to match or uplift that vibe.
+## Tech Stack
+* **Python:** Used for all the logic.
+* **Streamlit:** Used to build the user interface.
+* **Hosting:** Deployed on Streamlit Community Cloud.
 
-✨ Features
+## How to Run This Code
+If you want to run this project on your own computer:
 
-Sentiment Analysis: Detects 5 core emotions (Happy, Sad, Energetic, Relaxed, Romantic) from natural language text.
+1.  Clone this repository:
+    `git clone https://github.com/iamtanmay37/VibeTunes-Project.git`
 
-Instant Recommendations: Real-time filtering of song databases.
+2.  Install the required library:
+    `pip install -r requirements.txt`
 
-Responsive UI: A clean, modern interface built with Streamlit.
-
-Direct Playback Links: One-click access to listen to songs on YouTube.
-
-🛠️ Technology Stack
-
-Language: Python 3.x
-
-Framework: Streamlit (for Web UI)
-
-Logic: Rule-based Natural Language Processing (NLP)
-
-Deployment: Streamlit Community Cloud
-
-🚀 How to Run Locally
-
-Clone the repository
-
-git clone [https://github.com/iamtanmay37/VibeTunes-Project.git](https://github.com/iamtanmay37/VibeTunes-Project.git)
-cd VibeTunes-Project
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Run the application
-
-streamlit run 1.py
-
-
-📂 Project Structure
-
-1.py: The main application source code containing the logic and UI.
-
-requirements.txt: List of Python dependencies.
-
-README.md: Project documentation.
-
-🔮 Future Enhancements
-
-Integration with Spotify API for live playlist generation.
-
-Deep Learning models (BERT/LSTM) for more complex emotion detection.
-
-Voice input support.
+3.  Run the app:
+    `streamlit run 1.py`
